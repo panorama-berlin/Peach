@@ -2,12 +2,12 @@ const path = require("path");
 
 const addBpsc = (config) => {
   const bpsc = [
-    "babel-plugin-styled-components", {
+    "@quickbaseoss/babel-plugin-styled-components-css-namespace",
+    ["babel-plugin-styled-components", {
       displayName: true
-    }
+    }]
   ]
 
-  // const plugins = config.plugins.unshift(bpsc)
   const plugins = [bpsc]
   plugins.push(config.plugins)
   return { ...config, plugins }

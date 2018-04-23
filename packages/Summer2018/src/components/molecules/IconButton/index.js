@@ -28,10 +28,6 @@ const StyledSpan = styled.span`
 
 const Icon = styled.i`
   line-height: ${footerHeight};
-
-  &&& {
-    line-height: ${footerHeight};
-  }
 `;
 
 const IconButton = ({ link, ...props }) => {

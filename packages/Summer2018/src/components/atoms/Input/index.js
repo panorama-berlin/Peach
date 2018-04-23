@@ -1,12 +1,8 @@
-import styled from "styled-components";
+import React from 'react'
+import { Input as SUInput } from 'semantic-ui-react'
 
-const Input = styled.input`
-  background: white;
-  padding: 0 0.618em;
-  font-size: 1em;
-  &:focus {
-    outline: inherit;
-  }
-`;
+const Input = ({ className, ...props }) => (
+  <SUInput className={className} {...props} />
+)
 
-export default Input;
+export default Input

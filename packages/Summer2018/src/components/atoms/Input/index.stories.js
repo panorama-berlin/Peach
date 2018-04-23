@@ -5,5 +5,5 @@ import Component from ".";
 
 storiesOf("Input", module)
   .add("default", () => (
-    <Component type="submit" value="Submit"></Component>
+    <Component placeholder='Search...' />
   ));
