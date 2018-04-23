@@ -5,6 +5,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider } from "styled-components";
 import { IntlProvider } from 'react-intl';
 import 'simple-line-icons/css/simple-line-icons.css';
+import 'semantic-ui-css/semantic.min.css';
 
 import theme from "../src/components/themes/default";
 import './styles.css';
