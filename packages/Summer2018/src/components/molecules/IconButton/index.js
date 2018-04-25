@@ -1,59 +1,43 @@
-import React from "react";
+import React from 'react'
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-
-const footerHeight = '2em'
-
-const Wrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-`;
+import Button from '../../atoms/Button'
+import Icon from '../../atoms/Icon'
 
 const StyledLink = styled(Link)`
-  flex-grow: 1;
-  text-align: center;
-  height: ${footerHeight};
-  text-decoration: inherit;
   color: inherit;
 `;
 
-const StyledSpan = styled.span`
-  flex-grow: 1;
-  text-align: center;
-  height: ${footerHeight};
-  text-decoration: inherit;
-`;
-
-const Icon = styled.i`
-  line-height: ${footerHeight};
-`;
-
-const IconButton = ({ link, ...props }) => {
+const IconButton = ({ className, link, inverted }) => {
   const isLink = link.to !== undefined;
   return (
-    <Wrapper {...props}>
+    <Button className={className} icon>
       {
         isLink && (
-          <StyledLink to={link.to} onClick={link.onClick ? link.onClick : () => {}}>
-             <Icon className={`icon-${link.icon} icons`} />
+          <StyledLink to={link.to}>
+            <Icon size="big" inverted={inverted} name={link.icon} />
           </StyledLink>
         )
       }
       {
         !isLink && (
-          <StyledSpan onClick={link.onClick}>
-             <Icon className={`icon-${link.icon} icons`} />
-          </StyledSpan>
+          <Button className={className} icon>
+            <Icon size="big" inverted={inverted} name={link.icon} />
+          </Button>
         )
       }
-    </Wrapper>
+    </Button>
   )
 }
 
-IconButton.propTypes = {
-  link: PropTypes.object.isRequired
+IconButton.defaultProps = {
+  inverted: false
 };
 
-export default IconButton;
+IconButton.propTypes = {
+  link: PropTypes.object.isRequired,
+  inverted: PropTypes.bool
+};
+
+export default IconButton

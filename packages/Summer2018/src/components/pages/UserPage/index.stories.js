@@ -7,7 +7,7 @@ import { Footer, LogoutButton } from "../../../components";
 const mockLinks = [
   { icon: 'home', to: '/home' },
   { icon: 'compass', to: '/' },
-  { icon: 'frame', to: '/scan' },
+  { icon: 'camera retro', to: '/scan' },
   { icon: 'heart', to: '/' },
   { icon: 'user', to: '/' }
 ]

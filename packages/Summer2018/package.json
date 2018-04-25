@@ -33,7 +33,6 @@
     "react-qr-reader": "2.1.0",
     "semantic-ui-css": "^2.3.1",
     "semantic-ui-react": "^0.79.1",
-    "simple-line-icons": "^2.4.1",
     "styled-components": "^3.2.5",
     "styled-theme": "^0.3.3",
     "styled-tools": "^0.5.0"
@@ -58,7 +57,6 @@
     "react-router-dom": "^4.2.2",
     "semantic-ui-css": "^2.3.1",
     "semantic-ui-react": "^0.79.1",
-    "simple-line-icons": "^2.4.1",
     "styled-components": "^3.2.5",
     "styled-theme": "^0.3.3",
     "styled-tools": "^0.5.0"

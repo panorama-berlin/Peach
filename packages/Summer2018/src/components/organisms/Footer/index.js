@@ -1,29 +1,26 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react'
 import styled from "styled-components";
-import IconButton from "../../molecules/IconButton"
+import Button from '../../atoms/Button'
+import ButtonGroup from '../../atoms/ButtonGroup'
+import IconButton from '../../molecules/IconButton'
 
-const footerHeight = '2em'
-
-const Wrapper = styled.footer`
+const StyledButtonGroup = styled(ButtonGroup)`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  background-color: ${props => props.theme.palette.primary[0]};
-  font-size: 2em;
-  color: white;
 `;
 
-const Footer = ({ className, links }) => (
-  <Wrapper className={className}>
+const StyledIconButton = styled(IconButton)`
+  background: ${props => props.theme.palette.primary[0]};
+  line-height: 2em;
+`;
+
+const Footer = ({ links }) => (
+  <StyledButtonGroup>
     {
-      links.map(link => (<IconButton key={`${link.to}-${link.icon}`} link={link} />))
+      links.map(link => (<StyledIconButton inverted key={`${link.to}-${link.icon}`} link={link} />))
     }
-  </Wrapper>
-);
+  </StyledButtonGroup>
+)
 
-Footer.propTypes = {
-  links: PropTypes.array.isRequired
-};
-
-export default Footer;
+export default Footer
