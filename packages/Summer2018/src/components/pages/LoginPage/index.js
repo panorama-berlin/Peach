@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-import { Img } from "../../../components";
+import { Image } from "../../../components";
 
 import backgroundImage from "./home-keyvisual.jpg";
 import logoImage from "./logo-white.svg";
@@ -25,7 +25,7 @@ const Content = styled.div`
   grid-row-gap: 4em;
 `;
 
-const Logo = styled(Img)`
+const Logo = styled(Image)`
   width: 100%;
   grid-row-start: 1;
   padding-top: 4em;

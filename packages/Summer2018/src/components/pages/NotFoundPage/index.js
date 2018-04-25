@@ -2,13 +2,13 @@ import React from 'react';
 import { FormattedMessage } from 'react-intl';
 
 import messages from './messages';
-import { H1 } from '../../../components';
+import { Header } from '../../../components';
 
 const NotFoundPage = () => (
   <article>
-    <H1>
+    <Header>
       <FormattedMessage {...messages.header} />
-    </H1>
+    </Header>
   </article>
 );
 

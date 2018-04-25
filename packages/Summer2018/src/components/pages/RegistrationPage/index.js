@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import { FormattedMessage } from 'react-intl';
 
 import messages from './messages';
-import { H1 } from "../../../components";
+import { Header } from "../../../components";
 
 const RegistrationPage = () => (
   <div>
@@ -14,9 +14,9 @@ const RegistrationPage = () => (
         content="Registration page of React.js Boilerplate application"
       />
     </Helmet>
-    <H1>
+    <Header>
       <FormattedMessage {...messages.header} />
-    </H1>
+    </Header>
   </div>
 );
 

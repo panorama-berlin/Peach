@@ -1,8 +1,9 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
+import { action } from "@storybook/addon-actions";
 import Component from ".";
 
-storiesOf("A", module)
+storiesOf("Icon", module)
   .add("default", () => (
-    <Component href="https://www.w3schools.com">hyperlink</Component>
+    <Component name="home" />
   ));

@@ -2,7 +2,7 @@ import expect from 'expect'
 import React from 'react'
 import {render, unmountComponentAtNode} from 'react-dom'
 
-import H1 from '.'
+import Header from '.'
 
 describe('Component', () => {
   let node
@@ -16,7 +16,7 @@ describe('Component', () => {
   })
 
   it('displays a welcome message', () => {
-    render(<H1>Welcome to React components</H1>, node, () => {
+    render(<Header>Welcome to React components</Header>, node, () => {
       expect(node.innerHTML).toContain('Welcome to React components')
     })
   })

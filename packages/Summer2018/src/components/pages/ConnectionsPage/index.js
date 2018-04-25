@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 
-import { ScreenTemplate, H1 } from "../../../components";
+import { ScreenTemplate, Header } from "../../../components";
 
 const ConnectionsPage = ({ Footer }) => (
   <ScreenTemplate Footer={Footer}>
@@ -12,9 +12,9 @@ const ConnectionsPage = ({ Footer }) => (
         content="Connections page of React.js Boilerplate application"
       />
     </Helmet>
-    <H1>
+    <Header>
       Connections Page
-    </H1>
+    </Header>
   </ScreenTemplate>
 );
 

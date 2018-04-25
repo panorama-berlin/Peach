@@ -29,7 +29,7 @@ setOptions({
    * name to display in the top left corner
    * @type {String}
    */
-  name: 'Panorama UI',
+  name: 'Summer 2018',
   /**
    * URL for name in top left corner to link to
    * @type {String}

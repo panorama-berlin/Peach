@@ -2,18 +2,18 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import styled from "styled-components";
 
-import { ScreenTemplate, H1, Img} from "../../../components";
+import { ScreenTemplate, Header, Image } from "../../../components";
 
 import mapImage from "./germanyHigh.svg";
 
 const Content = styled.section`
   grid-row-start: 2;
-  height: 68vh;
+  height: 75vh;
   width: 100vw;
   overflow: auto;
 `
 
-const MapImage = styled(Img)`
+const MapImage = styled(Image)`
   width: 590px;
   height: 800px;
   overflow: scroll;
@@ -28,9 +28,9 @@ const MapPage = ({ Footer }) => (
         content="Map page of React.js Boilerplate application"
       />
     </Helmet>
-    <H1>
+    <Header>
       Map Page
-    </H1>
+    </Header>
     <Content>
       <MapImage src={mapImage} alt="map" />
     </Content>
