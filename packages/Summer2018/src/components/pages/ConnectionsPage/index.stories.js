@@ -2,7 +2,7 @@ import React from "react";
 import { storiesOf } from '@storybook/react'
 import { action } from "@storybook/addon-actions";
 import Component from ".";
-import { Footer } from "../../../components";
+import { Footer, ExhibitorList } from "../../../components";
 
 const mockLinks = [
   { icon: 'home', to: '/home' },
@@ -14,7 +14,9 @@ const mockLinks = [
 
 const FooterMock = () => <Footer links={mockLinks} />;
 
+const ExhibitorListMock = () => <ExhibitorList />
+
 storiesOf("ConnectionsPage", module)
   .add("default", () => (
-    <Component Footer={FooterMock} />
+    <Component Footer={FooterMock} ExhibitorList={ExhibitorListMock} />
   ));
