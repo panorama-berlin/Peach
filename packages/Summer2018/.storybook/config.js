@@ -6,7 +6,7 @@ import { ThemeProvider } from "styled-components";
 import { IntlProvider } from 'react-intl';
 import 'semantic-ui-css/semantic.min.css';
 
-import theme from "../src/components/themes/default";
+import themes from 'themes';
 import './styles.css';
 
 const req = require.context("../src/components", true, /.stories.js$/);
@@ -16,7 +16,7 @@ const loadStories = () => req.keys().forEach(filename => req(filename));
 storybook.addDecorator(story => 
   <BrowserRouter>
     <IntlProvider locale="en">
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={themes.summer2018}>
         {story()}
       </ThemeProvider>
     </IntlProvider>

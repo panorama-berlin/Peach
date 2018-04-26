@@ -21,7 +21,8 @@
     "prepare": "npm run build"
   },
   "dependencies": {
-    "npm": "^5.8.0"
+    "npm": "^5.8.0",
+    "themes": "file:../Themes"
   },
   "peerDependencies": {
     "qrious": "4.0.2",
