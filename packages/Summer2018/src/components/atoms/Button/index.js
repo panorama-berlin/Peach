@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 
 const Button = ({ className, children, ...props }) => (
   <Wrapper>
-    <SUButton fluid className={className} {...props}>{children}</SUButton>
+    <SUButton className={className} {...props}>{children}</SUButton>
   </Wrapper>
 )
 

@@ -68,7 +68,7 @@ class Login extends React.Component {
           value={this.state.password}
           onChange={event => this.setState({ password: event.target.value })}
         />
-        <StyledButton primary onClick={this.onLogInClick}>
+        <StyledButton primary fluid onClick={this.onLogInClick}>
           <FormattedMessage {...messages.loginButton} />
         </StyledButton>
       </Wrapper>

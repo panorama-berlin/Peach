@@ -5,7 +5,7 @@ import { FormattedMessage } from 'react-intl';
 import messages from './messages';
 import { ScreenTemplate, Header } from "../../../components";
 
-const ConnectionsPage = ({ Footer, ExhibitorList }) => (
+const ConnectionsPage = ({ Footer, ConnectionList }) => (
   <ScreenTemplate Footer={Footer}>
     <Helmet>
       <title>Connections</title>
@@ -17,7 +17,7 @@ const ConnectionsPage = ({ Footer, ExhibitorList }) => (
     <Header>
       <FormattedMessage {...messages.header} />
     </Header>
-    <ExhibitorList />
+    <ConnectionList />
   </ScreenTemplate>
 );
 

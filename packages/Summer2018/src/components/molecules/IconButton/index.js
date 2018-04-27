@@ -9,10 +9,10 @@ const StyledLink = styled(Link)`
   color: inherit;
 `;
 
-const IconButton = ({ className, link, inverted }) => {
+const IconButton = ({ className, link, inverted, fluid }) => {
   const isLink = link.to !== undefined;
   return (
-    <Button className={className} icon>
+    <Button className={className} fluid={fluid} icon>
       {
         isLink && (
           <StyledLink to={link.to}>
@@ -22,9 +22,7 @@ const IconButton = ({ className, link, inverted }) => {
       }
       {
         !isLink && (
-          <Button className={className} icon>
-            <Icon size="big" inverted={inverted} name={link.icon} />
-          </Button>
+          <Icon size="big" inverted={inverted} name={link.icon} />
         )
       }
     </Button>
@@ -32,12 +30,14 @@ const IconButton = ({ className, link, inverted }) => {
 }
 
 IconButton.defaultProps = {
-  inverted: false
+  inverted: false,
+  fluid: false
 };
 
 IconButton.propTypes = {
   link: PropTypes.object.isRequired,
-  inverted: PropTypes.bool
+  inverted: PropTypes.bool,
+  fluid: PropTypes.bool
 };
 
 export default IconButton

@@ -12,7 +12,7 @@ const StyledIconButton = styled(IconButton)`
 const Footer = ({ links }) => (
   <ButtonGroup>
     {
-      links.map(link => (<StyledIconButton inverted key={`${link.to}-${link.icon}`} link={link} />))
+      links.map(link => (<StyledIconButton fluid inverted key={`${link.to}-${link.icon}`} link={link} />))
     }
   </ButtonGroup>
 )
