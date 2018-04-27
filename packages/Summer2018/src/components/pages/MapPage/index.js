@@ -8,7 +8,7 @@ import mapImage from "./germanyHigh.svg";
 
 const Content = styled.section`
   grid-row-start: 2;
-  height: 75vh;
+  height: 80vh;
   width: 100vw;
   overflow: auto;
 `
@@ -16,7 +16,8 @@ const Content = styled.section`
 const MapImage = styled(Image)`
   width: 590px;
   height: 800px;
-  overflow: scroll;
+  overflow: auto;
+  max-width: inherit;
 `;
 
 const MapPage = ({ Footer }) => (
