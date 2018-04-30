@@ -39,11 +39,11 @@
     "styled-tools": "^0.5.0"
   },
   "devDependencies": {
+    "@quickbaseoss/babel-plugin-styled-components-css-namespace": "^0.0.10",
     "@storybook/addon-notes": "^3.4.1",
     "@storybook/addon-options": "^3.4.1",
     "@storybook/addon-viewport": "^3.4.1",
     "@storybook/react": "^3.4.0",
-    "@quickbaseoss/babel-plugin-styled-components-css-namespace": "^0.0.10",
     "babel-core": "^6.26.0",
     "babel-plugin-styled-components": "^1.5.1",
     "nwb": "^0.21.5",
