@@ -18,7 +18,8 @@
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "format": "prettier-standard 'src/**/*.js'"
   },
   "dependencies": {
     "npm": "^5.8.0",
@@ -47,6 +48,7 @@
     "babel-core": "^6.26.0",
     "babel-plugin-styled-components": "^1.5.1",
     "nwb": "^0.21.5",
+    "prettier-standard": "^8.0.1",
     "qrious": "4.0.2",
     "react": "16.3.1",
     "react-dom": "16.3.1",
