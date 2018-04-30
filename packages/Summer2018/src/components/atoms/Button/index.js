@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Button as SUButton } from 'semantic-ui-react'
 
-const Wrapper = styled.div`
+const Wrapper = styled.span`
   width: 100%;
 
   .ui.primary.button {
@@ -15,10 +15,8 @@ const Wrapper = styled.div`
 `
 
 const Button = ({ className, children, ...props }) => (
-  <Wrapper>
-    <SUButton className={className} {...props}>
-      {children}
-    </SUButton>
+  <Wrapper className={className}>
+    <SUButton {...props}>{children}</SUButton>
   </Wrapper>
 )
 

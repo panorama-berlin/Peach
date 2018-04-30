@@ -36,9 +36,11 @@ class ScanModal extends Component {
           </ModalDescription>
         </ModalContent>
         <ModalActions>
-          <Button color='black' onClick={() => this.confirm(false)}>
-            Nope
-          </Button>
+          <Button
+            color='black'
+            content='Nope'
+            onClick={() => this.confirm(false)}
+          />
           <Button
             positive
             icon='checkmark'
