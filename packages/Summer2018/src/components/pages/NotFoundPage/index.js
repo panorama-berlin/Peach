@@ -1,8 +1,8 @@
-import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import React from 'react'
+import { FormattedMessage } from 'react-intl'
 
-import messages from './messages';
-import { Header } from '../../../components';
+import messages from './messages'
+import { Header } from '../../../components'
 
 const NotFoundPage = () => (
   <article>
@@ -10,6 +10,6 @@ const NotFoundPage = () => (
       <FormattedMessage {...messages.header} />
     </Header>
   </article>
-);
+)
 
-export default NotFoundPage;
+export default NotFoundPage

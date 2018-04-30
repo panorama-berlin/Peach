@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { css, injectGlobal } from 'styled-components'
 import ReactModal from 'react-modal'
-import IconButton from "../IconButton"
-import Footer from "../../organisms/Footer"
+import IconButton from '../IconButton'
+import Footer from '../../organisms/Footer'
 
 injectGlobal`
   body.ReactModal__Body--open {
@@ -21,10 +21,10 @@ const overlayStyles = css`
   z-index: 9999;
   transition: opacity 250ms ease-in-out;
   opacity: 0;
-  &[class*="after-open"] {
+  &[class*='after-open'] {
     opacity: 1;
   }
-  &[class*="before-close"] {
+  &[class*='before-close'] {
     opacity: 0;
   }
 `
@@ -47,15 +47,15 @@ const ModalBox = styled(ReactModal)`
   min-width: 320px;
   max-width: calc(640px - 1rem);
   max-height: calc(100% - 1rem);
-  padding-top: ${({ hasHeader }) => hasHeader ? 0 : '1rem'};
+  padding-top: ${({ hasHeader }) => (hasHeader ? 0 : '1rem')};
   @media screen and (max-width: 640px) {
     width: calc(100% - 1rem);
     min-width: 0;
   }
-  &[class*="after-open"] {
+  &[class*='after-open'] {
     transform: translate(-50%, -50%);
   }
-  &[class*="before-close"] {
+  &[class*='before-close'] {
     transform: translate(-50%, 100%);
   }
   background: #eee;
@@ -86,10 +86,17 @@ const StyledFooter = styled(Footer)`
 
 const StyledReactModal = styled(({ className, ...props }) => (
   <ModalBox overlayClassName={className} closeTimeoutMS={250} {...props} />
-))`${overlayStyles}`
+))`
+  ${overlayStyles};
+`
 
 const Modal = ({
-  children, title, closeable, onClose, isConfirm, ...props
+  children,
+  title,
+  closeable,
+  onClose,
+  isConfirm,
+  ...props
 }) => {
   const hasHeader = title || closeable
   const confirmLinks = [
@@ -101,7 +108,7 @@ const Modal = ({
       icon: 'plus',
       onClick: () => onClose(true)
     }
-  ];
+  ]
   return (
     <StyledReactModal
       contentLabel={title || 'Modal'}
@@ -110,14 +117,10 @@ const Modal = ({
       ariaHideApp={false}
       {...props}
     >
-      {hasHeader &&
-        <Header>
-          {closeable && <button onClick={onClose}>close</button>}
-        </Header>
-      }
-      <Content>
-        {children}
-      </Content>
+      {hasHeader && (
+        <Header>{closeable && <button onClick={onClose}>close</button>}</Header>
+      )}
+      <Content>{children}</Content>
       {isConfirm && <StyledFooter links={confirmLinks} />}
     </StyledReactModal>
   )
@@ -128,7 +131,7 @@ Modal.propTypes = {
   title: PropTypes.string,
   closeable: PropTypes.bool,
   reverse: PropTypes.bool,
-  onClose: PropTypes.func.isRequired,
+  onClose: PropTypes.func.isRequired
 }
 
 export default Modal

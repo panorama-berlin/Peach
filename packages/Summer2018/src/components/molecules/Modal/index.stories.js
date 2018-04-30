@@ -10,7 +10,7 @@ storiesOf('Modal', module)
     </Modal>
   ))
   .add('with title', () => (
-    <Modal onClose={action('onClose')} title="Hello" isOpen>
+    <Modal onClose={action('onClose')} title='Hello' isOpen>
       Ullamco et reprehenderit magna cillum ullamco consectetur et enim aliqua.
     </Modal>
   ))

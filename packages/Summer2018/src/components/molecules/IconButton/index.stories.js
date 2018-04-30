@@ -1,11 +1,10 @@
-import React from "react";
+import React from 'react'
 import { storiesOf, addDecorator } from '@storybook/react'
-import { action } from "@storybook/addon-actions";
-import Component from ".";
+import { action } from '@storybook/addon-actions'
+import Component from '.'
 
 const mockLink = { icon: 'home', to: '/home' }
 
-storiesOf("IconButton", module)
-  .add("default", () => (
-    <Component link={mockLink}></Component>
-  ));
+storiesOf('IconButton', module).add('default', () => (
+  <Component link={mockLink} />
+))

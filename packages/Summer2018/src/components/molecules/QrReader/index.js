@@ -1,5 +1,5 @@
-import React from "react";
-import ReactQrReader from "react-qr-reader";
+import React from 'react'
+import ReactQrReader from 'react-qr-reader'
 import styled from 'styled-components'
 
 const StyledReactQrReader = styled(ReactQrReader)`
@@ -9,21 +9,21 @@ const StyledReactQrReader = styled(ReactQrReader)`
 `
 
 class QrReader extends React.PureComponent {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
     this.state = {
       delay: 1000
-    };
+    }
   }
   handleScan = newScanData => {
-    const { scanData, onScan } = this.props;
+    const { scanData, onScan } = this.props
     if (!scanData && newScanData) onScan(newScanData)
-  };
-  handleError = err => {};
-  componentWillUnmount() {
+  }
+  handleError = err => {}
+  componentWillUnmount () {
     this.props.clearScan()
   }
-  render() {
+  render () {
     return (
       <StyledReactQrReader
         delay={this.state.delay}
@@ -31,7 +31,7 @@ class QrReader extends React.PureComponent {
         onScan={this.handleScan}
         showViewFinder={false}
       />
-    );
+    )
   }
 }
 

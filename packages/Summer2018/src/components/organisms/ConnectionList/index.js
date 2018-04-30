@@ -3,7 +3,7 @@ import Segment from '../../atoms/Segment'
 import Header from '../../atoms/Header'
 import CardGroup from '../../atoms/CardGroup'
 
-const toCardGroupItem = (connection) => ({
+const toCardGroupItem = connection => ({
   header: `Exhibitor: ${connection.profileId}`,
   description: 'Some exhibitor info here',
   meta: `${connection.profileType}`

@@ -1,18 +1,18 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import PropTypes from "prop-types";
-import { FormattedMessage } from 'react-intl';
+import React from 'react'
+import { Helmet } from 'react-helmet'
+import PropTypes from 'prop-types'
+import { FormattedMessage } from 'react-intl'
 
-import messages from './messages';
-import { ScreenTemplate, Header, QrCode } from "../../../components";
+import messages from './messages'
+import { ScreenTemplate, Header, QrCode } from '../../../components'
 
 const UserPage = ({ Footer, Logout, currentUser }) => (
   <ScreenTemplate Footer={Footer}>
     <Helmet>
       <title>User Page</title>
       <meta
-        name="description"
-        content="User page of React.js Boilerplate application"
+        name='description'
+        content='User page of React.js Boilerplate application'
       />
     </Helmet>
     <Header>
@@ -21,10 +21,10 @@ const UserPage = ({ Footer, Logout, currentUser }) => (
     <QrCode value={currentUser.id} size={200} />
     <Logout />
   </ScreenTemplate>
-);
+)
 
 UserPage.propTypes = {
   currentUser: PropTypes.object.isRequired
-};
+}
 
-export default UserPage;
+export default UserPage

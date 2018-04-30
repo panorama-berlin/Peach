@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
 const Wrapper = styled.div`
   display: grid;
@@ -13,7 +13,7 @@ const Wrapper = styled.div`
   @media screen and (display-mode: standalone) {
     height: 100vh;
   }
-`;
+`
 
 const HeaderWrapper = styled.div`
   display: grid;
@@ -24,7 +24,7 @@ const HeaderWrapper = styled.div`
 const ContentWrapper = styled.div`
   display: grid;
   grid-row-start: 2;
-  overflow:auto;
+  overflow: auto;
 `
 const FooterWrapper = styled.div`
   display: grid;
@@ -35,15 +35,21 @@ const FooterWrapper = styled.div`
 const ScreenTemplate = ({ Header, children, Footer, ...props }) => (
   <Wrapper {...props}>
     {Header && <Header />}
-    <ContentWrapper><section>{children}</section></ContentWrapper>
-    {Footer && <FooterWrapper><Footer /></FooterWrapper>}
+    <ContentWrapper>
+      <section>{children}</section>
+    </ContentWrapper>
+    {Footer && (
+      <FooterWrapper>
+        <Footer />
+      </FooterWrapper>
+    )}
   </Wrapper>
-);
+)
 
 ScreenTemplate.propTypes = {
   header: PropTypes.node,
   footer: PropTypes.node,
   children: PropTypes.any.isRequired
-};
+}
 
-export default ScreenTemplate;
+export default ScreenTemplate

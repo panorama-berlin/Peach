@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { action } from "@storybook/addon-actions";
-import Component from ".";
-import { Footer } from "../../../components";
+import { action } from '@storybook/addon-actions'
+import Component from '.'
+import { Footer } from '../../../components'
 
 const mockLinks = [
   { icon: 'home', to: '/home' },
@@ -12,9 +12,8 @@ const mockLinks = [
   { icon: 'user', to: '/' }
 ]
 
-const FooterMock = () => <Footer links={mockLinks} />;
+const FooterMock = () => <Footer links={mockLinks} />
 
-storiesOf("MapPage", module)
-  .add("default", () => (
-    <Component Footer={FooterMock} />
-  ));
+storiesOf('MapPage', module).add('default', () => (
+  <Component Footer={FooterMock} />
+))
