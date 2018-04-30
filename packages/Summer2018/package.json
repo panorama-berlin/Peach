@@ -4,22 +4,20 @@
   "description": "react ui component library",
   "main": "es/index.js",
   "module": "es/index.js",
-  "files": [
-    "css",
-    "es",
-    "lib",
-    "umd"
-  ],
+  "files": ["css", "es", "lib", "umd"],
   "scripts": {
     "build": "nwb build-react-component --copy-files --no-demo",
     "clean": "nwb clean-module && nwb clean-demo",
-    "start": "nwb serve-react-demo",
     "test": "nwb test-react",
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "prepare": "npm run build",
-    "format": "prettier-standard 'src/**/*.js'"
+    "format": "prettier-standard 'src/**/*.js'",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": ["yarn run format", "git add"]
   },
   "dependencies": {
     "npm": "^5.8.0",
@@ -47,6 +45,8 @@
     "@storybook/react": "^3.4.0",
     "babel-core": "^6.26.0",
     "babel-plugin-styled-components": "^1.5.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.5",
     "nwb": "^0.21.5",
     "prettier-standard": "^8.0.1",
     "qrious": "4.0.2",
@@ -68,7 +68,5 @@
   "homepage": "",
   "license": "MIT",
   "repository": "",
-  "keywords": [
-    "react-component"
-  ]
+  "keywords": ["react-component"]
 }
