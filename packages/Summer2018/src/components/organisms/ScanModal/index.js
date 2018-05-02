@@ -11,13 +11,24 @@ import ModalActions from '../../atoms/ModalActions'
 class ScanModal extends Component {
   state = { open: false }
 
+  componentDidMount = () => {
+    this._mounted = true
+  }
+
+  componentWillUnmount = () => {
+    this._mounted = false
+  }
+
   static getDerivedStateFromProps (nextProps, prevState) {
     return nextProps.scanData !== undefined
       ? { ...prevState, open: true }
       : null
   }
 
-  close = () => this.setState({ open: false })
+  close = () => {
+    if (this._mounted) this.setState({ open: false })
+  }
+
   confirm = result => {
     this.props.onConfirm(result)
     this.close()

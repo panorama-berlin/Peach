@@ -3,19 +3,22 @@ import Component from '.'
 
 const activeConnections = [
   {
-    profileId: 6,
-    profileType: 'Brand'
+    id: '6',
+    type: 'Brand',
+    state: 'ACTIVE'
   }
 ]
 
 const pendingConnections = [
   {
-    profileId: 8,
-    profileType: 'Brand'
+    id: '8',
+    type: 'Brand',
+    state: 'PENDING'
   },
   {
-    profileId: 7,
-    profileType: 'Brand'
+    id: '7',
+    type: 'Brand',
+    state: 'PENDING'
   }
 ]
 

@@ -4,9 +4,10 @@ import Header from '../../atoms/Header'
 import CardGroup from '../../atoms/CardGroup'
 
 const toCardGroupItem = connection => ({
-  header: `Exhibitor: ${connection.profileId}`,
+  key: connection.id,
+  header: `Exhibitor: ${connection.id}`,
   description: 'Some exhibitor info here',
-  meta: `${connection.profileType}`
+  meta: `${connection.type}`
 })
 
 const ConnectionsList = ({ activeConnections, pendingConnections }) => (
