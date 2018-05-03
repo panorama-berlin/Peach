@@ -2,7 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import Component from '.'
-import { Footer, LogoutButton } from '../../../components'
+import { Footer, LogoutButton, LogoutModal } from '../../../components'
 
 const mockLinks = [
   { icon: 'home', to: '/home' },
@@ -18,6 +18,8 @@ const LogoutMock = () => (
   <LogoutButton onLogOut={() => {}}>Log Out</LogoutButton>
 )
 
+const LogoutModalMock = () => <LogoutModal onConfirm={() => {}} />
+
 const currentUser = {
   id: '123456789',
   name: 'John Smith',
@@ -28,6 +30,7 @@ storiesOf('UserPage', module).add('default', () => (
   <Component
     Footer={FooterMock}
     Logout={LogoutMock}
+    LogoutModal={LogoutModalMock}
     currentUser={currentUser}
   />
 ))
