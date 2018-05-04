@@ -20,7 +20,7 @@
     "*.{js,json,css,md}": ["yarn run format", "git add"]
   },
   "dependencies": {
-    "npm": "^5.8.0",
+    "npm": "^6.0.0",
     "themes": "file:../Themes"
   },
   "peerDependencies": {

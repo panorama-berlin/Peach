@@ -40,7 +40,6 @@ class LogoutModal extends Component {
       <div>
         <LogoutButton onLogOut={this.onLogOut} />
         <Modal
-          {...this.props}
           dimmer='blurring'
           open={open}
           onClose={() => this.confirm(false)}
