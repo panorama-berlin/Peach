@@ -1,5 +1,5 @@
 {
-  "name": "summer-2018",
+  "name": "@panorama-berlin/summer-2018",
   "version": "1.0.0",
   "description": "react ui component library",
   "main": "es/index.js",
