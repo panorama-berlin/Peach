@@ -7,17 +7,14 @@ Panorama's open-source UI components and theming.
 // install node modules
 lerna bootstrap
 
-// symlink ui package
-yarn run link:summer-2018
-
-// symlink themes package
-yarn run link:themes
-
 // start app
 yarn start
 
 // start storybook
 yarn storybook
+
+// symlink summer-2018
+cd ./packages/Summer2018/ && yarn link "@panorama-berlin/summer-2018"
 
 // refresh app on ui change
 yarn build

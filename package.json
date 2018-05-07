@@ -1,7 +1,5 @@
 {
 	"scripts": {
-		"link:summer-2018": "( cd ./packages/Summer2018/ && yarn link )",
-		"link:themes": "( cd ./packages/Themes/ && yarn link )",
 		"build": "( cd ./packages/Summer2018/ && yarn build )",
 		"test": "( cd ./packages/Summer2018/ && yarn test )",
 		"storybook": "( cd ./packages/Summer2018/ && yarn storybook )"

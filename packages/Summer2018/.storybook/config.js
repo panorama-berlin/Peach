@@ -1,27 +1,25 @@
-import React from "react";
-import * as storybook from '@storybook/react';
-import { setOptions } from '@storybook/addon-options';
+import React from 'react'
+import * as storybook from '@storybook/react'
+import { setOptions } from '@storybook/addon-options'
 import { BrowserRouter } from 'react-router-dom'
-import { ThemeProvider } from "styled-components";
-import { IntlProvider } from 'react-intl';
-import 'semantic-ui-css/semantic.min.css';
+import { ThemeProvider } from 'styled-components'
+import { IntlProvider } from 'react-intl'
+import 'semantic-ui-css/semantic.min.css'
 
-import themes from 'themes';
-import './styles.css';
+import themes from '@panorama-berlin/themes'
+import './styles.css'
 
-const req = require.context("../src/components", true, /.stories.js$/);
+const req = require.context('../src/components', true, /.stories.js$/)
 
-const loadStories = () => req.keys().forEach(filename => req(filename));
+const loadStories = () => req.keys().forEach(filename => req(filename))
 
-storybook.addDecorator(story => 
+storybook.addDecorator(story => (
   <BrowserRouter>
     <IntlProvider locale="en">
-      <ThemeProvider theme={themes.summer2018}>
-        {story()}
-      </ThemeProvider>
+      <ThemeProvider theme={themes.summer2018}>{story()}</ThemeProvider>
     </IntlProvider>
   </BrowserRouter>
-);
+))
 
 setOptions({
   /**
@@ -96,7 +94,7 @@ setOptions({
    * enable/disable shortcuts
    * @type {Boolean}
    */
-  enableShortcuts: true, // true by default
-});
+  enableShortcuts: true // true by default
+})
 
-storybook.configure(loadStories, module);
+storybook.configure(loadStories, module)

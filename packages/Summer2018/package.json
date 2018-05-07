@@ -5,8 +5,14 @@
   "main": "es/index.js",
   "module": "es/index.js",
   "files": ["css", "es", "lib", "umd"],
+  "engines": {
+    "npm": ">=3",
+    "node": ">= 6.x <= 9.x",
+    "yarn": ">=1.5.1 <=1.6.0"
+  },
   "scripts": {
     "build": "nwb build-react-component --copy-files --no-demo",
+    "build:storybook": "build-storybook -c .storybook -o .storybook-dist",
     "clean": "nwb clean-module && nwb clean-demo",
     "test": "nwb test-react",
     "test:coverage": "nwb test-react --coverage",
@@ -20,8 +26,8 @@
     "*.{js,json,css,md}": ["yarn run format", "git add"]
   },
   "dependencies": {
-    "npm": "^6.0.0",
-    "themes": "file:../Themes"
+    "@panorama-berlin/themes": "^1.0.0",
+    "npm": "^6.0.0"
   },
   "peerDependencies": {
     "qrious": "4.0.2",
@@ -39,6 +45,7 @@
   },
   "devDependencies": {
     "@quickbaseoss/babel-plugin-styled-components-css-namespace": "^0.0.10",
+    "@storybook/addons": "^3.3.0",
     "@storybook/addon-notes": "^3.4.1",
     "@storybook/addon-options": "^3.4.1",
     "@storybook/addon-viewport": "^3.4.1",
