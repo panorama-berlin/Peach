@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Button } from 'semantic-ui-react'
 
-const StyledButtonGroup = styled(Button.Group)`
+const StyledButtonGroup = styled(props => <Button.Group {...props} />)`
   display: flex;
   justify-content: space-between;
   width: 100%;

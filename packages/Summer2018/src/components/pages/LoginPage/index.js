@@ -25,7 +25,7 @@ const Content = styled.div`
   grid-row-gap: 4em;
 `
 
-const Logo = styled(Image)`
+const Logo = styled(props => <Image {...props} />)`
   width: 100%;
   grid-row-start: 1;
   padding-top: 4em;

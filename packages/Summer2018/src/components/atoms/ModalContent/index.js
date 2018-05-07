@@ -2,4 +2,4 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Modal } from 'semantic-ui-react'
 
-export default Modal.Content
+export default props => <Modal.Content {...props} />

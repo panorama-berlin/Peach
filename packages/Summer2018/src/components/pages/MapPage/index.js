@@ -13,7 +13,7 @@ const Content = styled.section`
   overflow: auto;
 `
 
-const MapImage = styled(Image)`
+const MapImage = styled(props => <Image {...props} />)`
   width: 590px;
   height: 800px;
   overflow: auto;

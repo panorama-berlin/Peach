@@ -14,17 +14,17 @@ const Wrapper = styled.div`
   grid-row-gap: 1.618em;
 `
 
-const Email = styled(Input)`
+const Email = styled(props => <Input {...props} />)`
   grid-column-start: 1;
   grid-row-start: 1;
 `
 
-const Password = styled(Input)`
+const Password = styled(props => <Input {...props} />)`
   grid-column-start: 1;
   grid-row-start: 2;
 `
 
-const StyledButton = styled(Button)`
+const StyledButton = styled(props => <Button {...props} />)`
   grid-row-start: 3;
 `
 
