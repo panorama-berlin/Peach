@@ -1,6 +1,6 @@
 {
   "name": "@panorama-berlin/summer-2018",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "react ui component library",
   "main": "es/index.js",
   "module": "es/index.js",
@@ -45,7 +45,6 @@
   },
   "devDependencies": {
     "@quickbaseoss/babel-plugin-styled-components-css-namespace": "^0.0.10",
-    "@storybook/addons": "^3.3.0",
     "@storybook/addon-notes": "^3.4.1",
     "@storybook/addon-options": "^3.4.1",
     "@storybook/addon-viewport": "^3.4.1",
