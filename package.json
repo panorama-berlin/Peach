@@ -1,8 +1,8 @@
 {
 	"scripts": {
-		"build": "( cd ./packages/summer-2018/ && yarn build )",
-		"test": "( cd ./packages/summer-2018/ && yarn test )",
-		"storybook": "( cd ./packages/summer-2018/ && yarn storybook )"
+		"build": "lerna run --scope @panorama-berlin/summer-2018 build",
+		"test": "lerna run --scope @panorama-berlin/summer-2018 test",
+		"storybook": "lerna run --scope @panorama-berlin/summer-2018 storybook"
 	},
 	"devDependencies": {
 		"lerna": "^2.10.2"
