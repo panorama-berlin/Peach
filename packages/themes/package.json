@@ -1,6 +1,6 @@
 {
   "name": "@panorama-berlin/themes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "publishConfig": {
@@ -13,5 +13,7 @@
   "homepage": "",
   "license": "GPL-3.0",
   "repository": "https://github.com/panorama-berlin/Peach/tree/master/packages/themes",
-  "keywords": ["panorama-berlin"]
+  "keywords": [
+    "panorama-berlin"
+  ]
 }
