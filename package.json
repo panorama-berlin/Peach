@@ -1,7 +1,8 @@
 {
 	"scripts": {
-		"build": "lerna run --scope @panorama-berlin/summer-2018 build",
-		"test": "lerna run --scope @panorama-berlin/summer-2018 test",
+		"lerna:install": "./node_modules/lerna/bin/lerna.js bootstrap",
+		"lerna:test": "./node_modules/lerna/bin/lerna.js run --scope @panorama-berlin/summer-2018 test",
+		"lerna:build": "./node_modules/lerna/bin/lerna.js run --scope @panorama-berlin/summer-2018 build",
 		"storybook": "lerna run --scope @panorama-berlin/summer-2018 storybook"
 	},
 	"devDependencies": {
