@@ -1,15 +1,10 @@
 {
   "name": "@panorama-berlin/summer-2018",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "description": "react ui component library",
   "main": "es/index.js",
   "module": "es/index.js",
-  "files": [
-    "css",
-    "es",
-    "lib",
-    "umd"
-  ],
+  "files": ["css", "es", "lib", "umd"],
   "engines": {
     "npm": ">=3",
     "node": ">= 6.x <= 9.x",
@@ -31,13 +26,10 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*.{js,json,css,md}": [
-      "yarn run format",
-      "git add"
-    ]
+    "*.{js,json,css,md}": ["yarn run format", "git add"]
   },
   "dependencies": {
-    "@panorama-berlin/themes": "^1.0.1",
+    "@panorama-berlin/themes": "^1.0.0",
     "npm": "^6.0.0"
   },
   "peerDependencies": {
@@ -84,8 +76,7 @@
   "author": "Panorama Berlin",
   "homepage": "",
   "license": "GPL-3.0",
-  "repository": "https://github.com/panorama-berlin/Peach/tree/master/packages/summer-2018",
-  "keywords": [
-    "panorama-berlin"
-  ]
+  "repository":
+    "https://github.com/panorama-berlin/Peach/tree/master/packages/summer-2018",
+  "keywords": ["panorama-berlin"]
 }
