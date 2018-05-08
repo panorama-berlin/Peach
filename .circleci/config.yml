@@ -40,3 +40,10 @@ jobs:
       - store_artifacts:
           path: ./packages/summer-2018/coverage
           when: always
+deployment:
+  production:
+    branch: master
+    commands:
+      - 'git config --global user.email ${GITHUB_CI_USER_EMAIL}'
+      - 'git config --global user.name ${GITHUB_CI_USER_NAME}'
+      - 'git checkout master
