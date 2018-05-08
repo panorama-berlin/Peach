@@ -5,6 +5,7 @@
 		"storybook": "lerna run --scope @panorama-berlin/summer-2018 storybook"
 	},
 	"devDependencies": {
-		"lerna": "^2.10.2"
+		"lerna": "^2.10.2",
+		"nwb": "^0.21.5"
 	}
 }
