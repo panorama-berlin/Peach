@@ -4,6 +4,12 @@ machine:
     CI: "true"
   node:
     version: 9.6.1
+dependencies:
+  override:
+    - yarn
+test:
+  override:
+    - yarn test
 aliases:
   - &restore-node-modules-cache
     keys:
@@ -36,6 +42,15 @@ jobs:
       - run: yarn install
       - run: yarn test
       - run: yarn build
+      - save_cache: *save-node-modules-cache
+      - save_cache: *save-yarn-cache
+      - store_artifacts:
+          path: ./packages/summer-2018/coverage
+          when: always
+deployment:
+  production:
+    branch: master
+    commands:
       - run: sudo apt-get update && sudo apt-get install -y python-dev
       - run: sudo curl -O https://bootstrap.pypa.io/get-pip.py
       - run: sudo python get-pip.py
@@ -43,16 +58,3 @@ jobs:
       - run: aws --version
       - run: aws s3 ls
       - run: yarn run deploy
-      - save_cache: *save-node-modules-cache
-      - save_cache: *save-yarn-cache
-      - store_artifacts:
-          path: ./packages/summer-2018/coverage
-          when: always
-      - store_artifacts:
-          path: ./packages/summer-2018/.storybook-dist
-          when: always
-deployment:
-  prod:
-    branch: master
-    commands:
-      - checkout
