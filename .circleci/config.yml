@@ -35,10 +35,14 @@ jobs:
       - run: yarn
       - run: yarn lerna:install
       - run: yarn lerna:test
+      - run: yarn lerna:build
       - save_cache: *save-node-modules-cache
       - save_cache: *save-yarn-cache
       - store_artifacts:
           path: ./packages/summer-2018/coverage
+          when: always
+      - store_artifacts:
+          path: ./packages/summer-2018/.storybook-dist
           when: always
 deployment:
   prod:
