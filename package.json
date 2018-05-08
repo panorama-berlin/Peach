@@ -1,8 +1,8 @@
 {
 	"scripts": {
-		"build": "( cd ./packages/Summer2018/ && yarn build )",
-		"test": "( cd ./packages/Summer2018/ && yarn test )",
-		"storybook": "( cd ./packages/Summer2018/ && yarn storybook )"
+		"build": "( cd ./packages/summer-2018/ && yarn build )",
+		"test": "( cd ./packages/summer-2018/ && yarn test )",
+		"storybook": "( cd ./packages/summer-2018/ && yarn storybook )"
 	},
 	"devDependencies": {
 		"lerna": "^2.10.2"
