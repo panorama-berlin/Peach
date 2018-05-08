@@ -8,7 +8,10 @@
   "engines": {
     "npm": ">=3",
     "node": ">= 6.x <= 9.x",
-    "yarn": ">=1.5.1 <=1.6.0"
+    "yarn": ">=1.3.2 <=1.6.0"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "build": "nwb build-react-component --copy-files --no-demo",
@@ -70,9 +73,10 @@
     "styled-theme": "^0.3.3",
     "styled-tools": "^0.5.0"
   },
-  "author": "",
+  "author": "Panorama Berlin",
   "homepage": "",
-  "license": "MIT",
-  "repository": "",
-  "keywords": ["react-component"]
+  "license": "GPL-3.0",
+  "repository":
+    "https://github.com/panorama-berlin/Peach/tree/master/packages/summer-2018",
+  "keywords": ["panorama-berlin"]
 }
