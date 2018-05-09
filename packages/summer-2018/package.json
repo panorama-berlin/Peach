@@ -31,7 +31,7 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*.{js,json,css,md}": [
+    "./src/**/*.{js,json,css,md}": [
       "yarn run format",
       "git add"
     ]
