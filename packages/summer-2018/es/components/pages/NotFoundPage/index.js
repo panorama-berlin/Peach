@@ -1,10 +1,10 @@
-import React from 'react'
-import { FormattedMessage } from 'react-intl'
+import React from 'react';
+import { FormattedMessage } from 'react-intl';
 
-import messages from './messages'
-import { Header } from '../../../components'
+import messages from './messages';
+import { Header } from '../../../components';
 
-var NotFoundPage = function NotFoundPage () {
+var NotFoundPage = function NotFoundPage() {
   return React.createElement(
     'article',
     null,
@@ -13,7 +13,7 @@ var NotFoundPage = function NotFoundPage () {
       null,
       React.createElement(FormattedMessage, messages.header)
     )
-  )
-}
+  );
+};
 
-export default NotFoundPage
+export default NotFoundPage;

@@ -1,5 +1,5 @@
-import 'semantic-ui-css/semantic.min.css'
+import 'semantic-ui-css/semantic.min.css';
 
-export * from './components'
+export * from './components';
 
-export { default as themes } from '@panorama-berlin/themes'
+export { default as themes } from '@panorama-berlin/themes';

@@ -1,33 +1,21 @@
-var _templateObject = _taggedTemplateLiteralLoose(
-  [
-    '\n&& {\n  background: ',
-    ';\n  line-height: 2em;\n\n  .ui.button {\n    background: inherit;\n  }\n}\n'
-  ],
-  [
-    '\n&& {\n  background: ',
-    ';\n  line-height: 2em;\n\n  .ui.button {\n    background: inherit;\n  }\n}\n'
-  ]
-)
+var _templateObject = _taggedTemplateLiteralLoose(['\n&& {\n  background: ', ';\n  line-height: 2em;\n\n  .ui.button {\n    background: inherit;\n  }\n}\n'], ['\n&& {\n  background: ', ';\n  line-height: 2em;\n\n  .ui.button {\n    background: inherit;\n  }\n}\n']);
 
-function _taggedTemplateLiteralLoose (strings, raw) {
-  strings.raw = raw
-  return strings
-}
+function _taggedTemplateLiteralLoose(strings, raw) { strings.raw = raw; return strings; }
 
-import React from 'react'
-import styled from 'styled-components'
-import Button from '../../atoms/Button'
-import ButtonGroup from '../../atoms/ButtonGroup'
-import IconButton from '../../molecules/IconButton'
+import React from 'react';
+import styled from 'styled-components';
+import Button from '../../atoms/Button';
+import ButtonGroup from '../../atoms/ButtonGroup';
+import IconButton from '../../molecules/IconButton';
 
 var StyledIconButton = styled(function (props) {
-  return React.createElement(IconButton, props)
+  return React.createElement(IconButton, props);
 })(_templateObject, function (props) {
-  return props.theme.palette.primary[0]
-})
+  return props.theme.palette.primary[0];
+});
 
-var Footer = function Footer (_ref) {
-  var links = _ref.links
+var Footer = function Footer(_ref) {
+  var links = _ref.links;
   return React.createElement(
     ButtonGroup,
     null,
@@ -37,9 +25,9 @@ var Footer = function Footer (_ref) {
         inverted: true,
         key: link.to + '-' + link.icon,
         link: link
-      })
+      });
     })
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
