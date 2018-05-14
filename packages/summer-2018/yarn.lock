@@ -98,10 +98,6 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
-"@panorama-berlin/themes@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@panorama-berlin/themes/-/themes-1.0.0.tgz#372f5bf4af289e8ef958a851b4b52e2a1f23da17"
-
 "@quickbaseoss/babel-plugin-styled-components-css-namespace@^0.0.10":
   version "0.0.10"
   resolved "https://registry.yarnpkg.com/@quickbaseoss/babel-plugin-styled-components-css-namespace/-/babel-plugin-styled-components-css-namespace-0.0.10.tgz#24027bd870c4527d1b9d7503e77da640ec9dfe10"

@@ -1,13 +1,14 @@
 {
 	"scripts": {
 		"lerna:install": "./node_modules/lerna/bin/lerna.js bootstrap",
-		"lerna:test": "./node_modules/lerna/bin/lerna.js run --scope @panorama-berlin/summer-2018 test:coverage",
 		"lerna:build": "./node_modules/lerna/bin/lerna.js run --scope @panorama-berlin/summer-2018 build:storybook",
-		"install": "yarn run lerna:install",
+		"lerna:test": "./node_modules/lerna/bin/lerna.js run --scope @panorama-berlin/summer-2018 test:coverage",
+		"storybook": "./node_modules/lerna/bin/lerna.js run --scope @panorama-berlin/summer-2018 storybook",
+		"postinstall": "yarn run lerna:install",
 		"build": "yarn run lerna:build",
+		"start": "yarn run storybook",
 		"test": "yarn run lerna:test",
-		"deploy": "yarn run lerna:build && aws s3 sync ./packages/summer-2018/.storybook-dist/ s3://panorama-summer-2018 --delete",
-		"storybook": "lerna run --scope @panorama-berlin/summer-2018 storybook"
+		"deploy": "yarn run lerna:build && aws s3 sync ./packages/summer-2018/.storybook-dist/ s3://panorama-summer-2018 --delete"
 	},
 	"devDependencies": {
 		"lerna": "^2.10.2",
