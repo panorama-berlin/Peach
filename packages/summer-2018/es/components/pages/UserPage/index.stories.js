@@ -2,7 +2,8 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import Component from '.';
-import { Footer, LogoutButton, LogoutModal } from '../../../components';
+import { Footer, LogoutButton, LogoutModal, LanguageDropdown } from '../../../components';
+import MockLanguageDropdown from '../../molecules/LanguageDropdown/mocks';
 
 var mockLinks = [{ icon: 'home', to: '/home' }, { icon: 'compass', to: '/' }, { icon: 'camera retro', to: '/scan' }, { icon: 'heart', to: '/' }, { icon: 'user', to: '/' }];
 
@@ -33,6 +34,7 @@ storiesOf('UserPage', module).add('default', function () {
     Footer: FooterMock,
     Logout: LogoutMock,
     LogoutModal: LogoutModalMock,
+    LanguageDropdown: MockLanguageDropdown,
     currentUser: currentUser
   });
 });

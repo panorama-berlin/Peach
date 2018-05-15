@@ -11,7 +11,7 @@ import {
   LogoutButton
 } from '../../../components'
 
-const UserPage = ({ Footer, LogoutModal, currentUser }) => (
+const UserPage = ({ Footer, LogoutModal, LanguageDropdown, currentUser }) => (
   <ScreenTemplate Footer={Footer}>
     <Helmet>
       <title>User Page</title>
@@ -25,6 +25,7 @@ const UserPage = ({ Footer, LogoutModal, currentUser }) => (
     </Header>
     <QrCode value={currentUser.id} size={200} />
     <LogoutModal />
+    <LanguageDropdown />
   </ScreenTemplate>
 )
 

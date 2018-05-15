@@ -9,6 +9,7 @@ import { ScreenTemplate, Header, QrCode, LogoutButton } from '../../../component
 var UserPage = function UserPage(_ref) {
   var Footer = _ref.Footer,
       LogoutModal = _ref.LogoutModal,
+      LanguageDropdown = _ref.LanguageDropdown,
       currentUser = _ref.currentUser;
   return React.createElement(
     ScreenTemplate,
@@ -32,7 +33,8 @@ var UserPage = function UserPage(_ref) {
       React.createElement(FormattedMessage, messages.header)
     ),
     React.createElement(QrCode, { value: currentUser.id, size: 200 }),
-    React.createElement(LogoutModal, null)
+    React.createElement(LogoutModal, null),
+    React.createElement(LanguageDropdown, null)
   );
 };
 

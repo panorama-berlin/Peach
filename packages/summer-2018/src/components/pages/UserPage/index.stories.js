@@ -2,7 +2,13 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import Component from '.'
-import { Footer, LogoutButton, LogoutModal } from '../../../components'
+import {
+  Footer,
+  LogoutButton,
+  LogoutModal,
+  LanguageDropdown
+} from '../../../components'
+import MockLanguageDropdown from '../../molecules/LanguageDropdown/mocks'
 
 const mockLinks = [
   { icon: 'home', to: '/home' },
@@ -31,6 +37,7 @@ storiesOf('UserPage', module).add('default', () => (
     Footer={FooterMock}
     Logout={LogoutMock}
     LogoutModal={LogoutModalMock}
+    LanguageDropdown={MockLanguageDropdown}
     currentUser={currentUser}
   />
 ))
