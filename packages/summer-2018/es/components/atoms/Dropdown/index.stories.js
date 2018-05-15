@@ -14,8 +14,5 @@ var options = [{
 }];
 
 storiesOf('Dropdown', module).add('default', function () {
-  return React.createElement(Component, {
-    options: options,
-    text: 'Select Colour'
-  });
+  return React.createElement(Component, { options: options, text: 'Select Colour' });
 });

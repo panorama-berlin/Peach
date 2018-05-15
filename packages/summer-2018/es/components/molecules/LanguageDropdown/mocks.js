@@ -5,7 +5,10 @@ import Component from '.';
 var languageOptions = [{ key: 'Arabic', text: 'Arabic', value: 'Arabic' }];
 
 export var ComponentMock = function ComponentMock() {
-  return React.createElement(Component, { options: languageOptions, onLocaleSelected: action('localeSelected') });
+  return React.createElement(Component, {
+    options: languageOptions,
+    onLocaleSelected: action('localeSelected')
+  });
 };
 
 export default ComponentMock;

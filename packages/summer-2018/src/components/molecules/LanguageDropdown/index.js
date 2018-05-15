@@ -1,7 +1,7 @@
 import React from 'react'
 import Dropdown from '../../atoms/Dropdown'
-
-const test = (e, { value }) => console.log('onChange', value)
+import { FormattedMessage } from 'react-intl'
+import messages from './messages'
 
 const LanguageDropdown = ({ options, onLocaleSelected }) => (
   <Dropdown
@@ -13,7 +13,7 @@ const LanguageDropdown = ({ options, onLocaleSelected }) => (
     options={options}
     onChange={(e, { value }) => onLocaleSelected(value)}
     search
-    text='Select Language'
+    text={<FormattedMessage {...messages.text} />}
     closeOnBlur
     closeOnChange
   />
