@@ -7,11 +7,42 @@
 		"postinstall": "yarn run lerna:install",
 		"build": "yarn run lerna:build",
 		"start": "yarn run storybook",
-		"test": "yarn run lerna:test",
+		"test": "NODE_ENV=test node_modules/.bin/jest --coverage",
 		"deploy": "yarn run lerna:build && aws s3 sync ./packages/antigua/.storybook-dist/ s3://panorama-summer-2018 --delete"
 	},
 	"devDependencies": {
+		"babel-core": "^6.26.3",
+		"jest": "^22.4.3",
 		"lerna": "^2.10.2",
 		"nwb": "^0.21.5"
+	},
+	"jest": {
+		"collectCoverageFrom": [
+			"<rootDir>/packages/antigua/src/**/*.{js,jsx}",
+			"!<rootDir>/packages/antigua/src/**/*.test.{js,jsx}"
+		],
+		"coverageThreshold": {
+			"global": {
+				"statements": 0,
+				"branches": 0,
+				"lines": 0,
+				"functions": 0
+			}
+		},
+		"verbose": true,
+		"globals": {
+			"NODE_ENV": "test"
+		},
+		"moduleDirectories": [
+			"node_modules",
+			"packages/antigua/node_modules",
+			"packages/antigua/src"
+		],
+		"moduleFileExtensions": [
+			"js",
+			"json",
+			"jsx"
+		],
+		"testRegex": ".*\\.test\\.js$"
 	}
 }
