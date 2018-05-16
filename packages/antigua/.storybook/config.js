@@ -26,7 +26,7 @@ setOptions({
    * name to display in the top left corner
    * @type {String}
    */
-  name: 'Summer 2018',
+  name: 'Antigua',
   /**
    * URL for name in top left corner to link to
    * @type {String}
