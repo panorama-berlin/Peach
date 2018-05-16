@@ -1,5 +1,5 @@
 {
-  "name": "@panorama-berlin/summer-2018",
+  "name": "@panorama-berlin/antigua",
   "version": "1.0.4",
   "description": "react ui component library",
   "main": "es/index.js",
@@ -84,7 +84,7 @@
   "author": "Panorama Berlin",
   "homepage": "",
   "license": "GPL-3.0",
-  "repository": "https://github.com/panorama-berlin/Peach/tree/master/packages/summer-2018",
+  "repository": "https://github.com/panorama-berlin/Peach/tree/master/packages/antigua",
   "keywords": [
     "panorama-berlin"
   ]
