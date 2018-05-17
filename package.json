@@ -11,6 +11,7 @@
 		"deploy": "yarn run lerna:build && aws s3 sync ./packages/antigua/.storybook-dist/ s3://panorama-summer-2018 --delete"
 	},
 	"devDependencies": {
+		"@storybook/addon-storyshots": "^3.4.4",
 		"babel-core": "^6.26.3",
 		"jest": "^22.4.3",
 		"lerna": "^2.10.2",
@@ -20,14 +21,16 @@
 	"jest": {
 		"collectCoverageFrom": [
 			"<rootDir>/packages/antigua/src/**/*.{js,jsx}",
-			"!<rootDir>/packages/antigua/src/**/*.test.{js,jsx}"
+			"!<rootDir>/packages/antigua/src/**/*.test.{js,jsx}",
+			"!<rootDir>/packages/antigua/src/**/*.stories.{js,jsx}",
+			"!<rootDir>/packages/antigua/src/**/mocks.{js,jsx}"
 		],
 		"coverageThreshold": {
 			"global": {
-				"statements": 0,
+				"statements": 3,
 				"branches": 0,
-				"lines": 0,
-				"functions": 0
+				"lines": 3,
+				"functions": 11
 			}
 		},
 		"verbose": true,

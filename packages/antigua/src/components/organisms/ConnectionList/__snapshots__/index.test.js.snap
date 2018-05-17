@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="ui segment"
+  >
+    <div
+      className="ui medium header"
+    >
+      Pending
+    </div>
+    <div
+      className="ui centered cards"
+    >
+      <div
+        className="ui card"
+        href={undefined}
+        onClick={[Function]}
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="header"
+          >
+            Exhibitor: 8
+          </div>
+          <div
+            className="meta"
+          >
+            Brand
+          </div>
+          <div
+            className="description"
+          >
+            Some exhibitor info here
+          </div>
+        </div>
+      </div>
+      <div
+        className="ui card"
+        href={undefined}
+        onClick={[Function]}
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="header"
+          >
+            Exhibitor: 7
+          </div>
+          <div
+            className="meta"
+          >
+            Brand
+          </div>
+          <div
+            className="description"
+          >
+            Some exhibitor info here
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="ui segment"
+  >
+    <div
+      className="ui medium header"
+    >
+      Active
+    </div>
+    <div
+      className="ui centered cards"
+    >
+      <div
+        className="ui card"
+        href={undefined}
+        onClick={[Function]}
+      >
+        <div
+          className="content"
+        >
+          <div
+            className="header"
+          >
+            Exhibitor: 6
+          </div>
+          <div
+            className="meta"
+          >
+            Brand
+          </div>
+          <div
+            className="description"
+          >
+            Some exhibitor info here
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
