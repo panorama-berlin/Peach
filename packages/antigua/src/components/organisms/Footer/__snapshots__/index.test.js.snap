@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="ui buttons sc-bwzfXH irATXA"
+>
+  <span
+    className="sc-bxivhb kcsnNr sc-bdVaJa jEkClK"
+  >
+    <button
+      className="ui fluid icon button"
+      disabled={undefined}
+      onClick={[Function]}
+      role="button"
+      tabIndex={undefined}
+    >
+      <a
+        className="sc-htpNat hWqqCL"
+        href="/home"
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="true"
+          className="home big inverted icon"
+        />
+      </a>
+    </button>
+  </span>
+  <span
+    className="sc-bxivhb kcsnNr sc-bdVaJa jEkClK"
+  >
+    <button
+      className="ui fluid icon button"
+      disabled={undefined}
+      onClick={[Function]}
+      role="button"
+      tabIndex={undefined}
+    >
+      <a
+        className="sc-htpNat hWqqCL"
+        href="/"
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="true"
+          className="compass big inverted icon"
+        />
+      </a>
+    </button>
+  </span>
+  <span
+    className="sc-bxivhb kcsnNr sc-bdVaJa jEkClK"
+  >
+    <button
+      className="ui fluid icon button"
+      disabled={undefined}
+      onClick={[Function]}
+      role="button"
+      tabIndex={undefined}
+    >
+      <a
+        className="sc-htpNat hWqqCL"
+        href="/scan"
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="true"
+          className="camera retro big inverted icon"
+        />
+      </a>
+    </button>
+  </span>
+  <span
+    className="sc-bxivhb kcsnNr sc-bdVaJa jEkClK"
+  >
+    <button
+      className="ui fluid icon button"
+      disabled={undefined}
+      onClick={[Function]}
+      role="button"
+      tabIndex={undefined}
+    >
+      <a
+        className="sc-htpNat hWqqCL"
+        href="/"
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="true"
+          className="heart big inverted icon"
+        />
+      </a>
+    </button>
+  </span>
+  <span
+    className="sc-bxivhb kcsnNr sc-bdVaJa jEkClK"
+  >
+    <button
+      className="ui fluid icon button"
+      disabled={undefined}
+      onClick={[Function]}
+      role="button"
+      tabIndex={undefined}
+    >
+      <a
+        className="sc-htpNat hWqqCL"
+        href="/"
+        onClick={[Function]}
+      >
+        <i
+          aria-hidden="true"
+          className="user big inverted icon"
+        />
+      </a>
+    </button>
+  </span>
+</div>
+`;

@@ -27,10 +27,10 @@
 		],
 		"coverageThreshold": {
 			"global": {
-				"statements": 3,
-				"branches": 0,
-				"lines": 3,
-				"functions": 11
+				"statements": 10,
+				"branches": 12,
+				"lines": 10,
+				"functions": 28
 			}
 		},
 		"verbose": true,
@@ -47,6 +47,6 @@
 			"json",
 			"jsx"
 		],
-		"testRegex": ".*\\.test\\.js$"
+		"testMatch": [ "**/src/**/?(*.)(spec|test).js?(x)" ]
 	}
 }
