@@ -17,9 +17,6 @@ storiesOf('ScanPage', module).add('default', function () {
   return React.createElement(
     ScreenTemplate,
     { Footer: Footer },
-    React.createElement(Component, {
-      QrReader: QrReaderMock,
-      ScanModal: ScanModalMock
-    })
+    React.createElement(Component, { QrReader: QrReaderMock, ScanModal: ScanModalMock })
   );
 });
