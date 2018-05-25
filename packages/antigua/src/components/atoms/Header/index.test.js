@@ -1,5 +1,5 @@
 import React from 'react'
-import renderer from 'react-test-renderer';
+import renderer from 'react-test-renderer'
 import Component from '.'
 
 it('renders correctly', () => {
@@ -7,4 +7,4 @@ it('renders correctly', () => {
     .create(<Component>Welcome to React components</Component>)
     .toJSON()
   expect(tree).toMatchSnapshot()
-});
+})
