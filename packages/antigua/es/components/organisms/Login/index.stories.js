@@ -1,8 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import Component from '.';
+import MockComponent from './mocks';
 
 storiesOf('Login', module).add('default', function () {
-  return React.createElement(Component, { onLogIn: action('logging in!'), isLoggingIn: false });
+  return React.createElement(MockComponent, null);
 });
