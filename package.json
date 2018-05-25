@@ -3,10 +3,10 @@
 		"lerna:install": "./node_modules/lerna/bin/lerna.js bootstrap",
 		"lerna:build": "./node_modules/lerna/bin/lerna.js run --scope @panorama-berlin/antigua build:storybook",
 		"lerna:test": "./node_modules/lerna/bin/lerna.js run --scope @panorama-berlin/antigua test:coverage",
-		"storybook": "./node_modules/lerna/bin/lerna.js run --scope @panorama-berlin/antigua storybook",
+		"lerna:start": "./node_modules/lerna/bin/lerna.js run --scope @panorama-berlin/antigua start",
 		"postinstall": "yarn run lerna:install",
 		"build": "yarn run lerna:build",
-		"start": "yarn run storybook",
+		"start": "yarn run lerna:start",
 		"test": "NODE_ENV=test node_modules/.bin/jest --coverage",
 		"deploy": "yarn run lerna:build && aws s3 sync ./packages/antigua/.storybook-dist/ s3://panorama-summer-2018 --delete"
 	},
