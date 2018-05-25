@@ -2,7 +2,6 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { ScreenTemplate } from '../../../components'
 
 const QrReaderWrapper = styled.div`
   height: 100%;
@@ -10,8 +9,8 @@ const QrReaderWrapper = styled.div`
   overflow: hidden;
 `
 
-const ScanPage = ({ Footer, QrReader, ScanModal }) => (
-  <ScreenTemplate Footer={Footer}>
+const ScanPage = ({ QrReader, ScanModal }) => (
+  <div>
     <Helmet>
       <title>QR Code Page</title>
       <meta
@@ -23,11 +22,12 @@ const ScanPage = ({ Footer, QrReader, ScanModal }) => (
       <QrReader />
     </QrReaderWrapper>
     <ScanModal />
-  </ScreenTemplate>
+  </div>
 )
 
 ScanPage.propTypes = {
-  Footer: PropTypes.func.isRequired
+  QrReader: PropTypes.func.isRequired,
+  ScanModal: PropTypes.func.isRequired
 }
 
 export default ScanPage

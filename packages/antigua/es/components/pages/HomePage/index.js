@@ -3,13 +3,12 @@ import { Helmet } from 'react-helmet';
 import { FormattedMessage } from 'react-intl';
 
 import messages from './messages';
-import { ScreenTemplate, Header } from '../../../components';
+import { Header } from '../../../components';
 
-var HomePage = function HomePage(_ref) {
-  var Footer = _ref.Footer;
+var HomePage = function HomePage() {
   return React.createElement(
-    ScreenTemplate,
-    { Footer: Footer },
+    'div',
+    null,
     React.createElement(
       Helmet,
       null,

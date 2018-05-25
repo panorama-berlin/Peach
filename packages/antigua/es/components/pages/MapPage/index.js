@@ -7,7 +7,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 
-import { ScreenTemplate, Header, Image } from '../../../components';
+import { Header, Image } from '../../../components';
 
 import mapImage from './germanyHigh.svg';
 
@@ -20,8 +20,8 @@ var MapImage = styled(function (props) {
 var MapPage = function MapPage(_ref) {
   var Footer = _ref.Footer;
   return React.createElement(
-    ScreenTemplate,
-    { Footer: Footer },
+    'div',
+    null,
     React.createElement(
       Helmet,
       null,

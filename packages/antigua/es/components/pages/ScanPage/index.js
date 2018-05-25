@@ -6,17 +6,15 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { ScreenTemplate } from '../../../components';
 
 var QrReaderWrapper = styled.div(_templateObject);
 
 var ScanPage = function ScanPage(_ref) {
-  var Footer = _ref.Footer,
-      QrReader = _ref.QrReader,
+  var QrReader = _ref.QrReader,
       ScanModal = _ref.ScanModal;
   return React.createElement(
-    ScreenTemplate,
-    { Footer: Footer },
+    'div',
+    null,
     React.createElement(
       Helmet,
       null,
@@ -40,7 +38,8 @@ var ScanPage = function ScanPage(_ref) {
 };
 
 ScanPage.propTypes = {
-  Footer: PropTypes.func.isRequired
+  QrReader: PropTypes.func.isRequired,
+  ScanModal: PropTypes.func.isRequired
 };
 
 export default ScanPage;

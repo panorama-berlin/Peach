@@ -4,16 +4,15 @@ import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 
 import messages from './messages';
-import { ScreenTemplate, Header, QrCode, LogoutButton } from '../../../components';
+import { Header, QrCode, LogoutButton } from '../../../components';
 
 var UserPage = function UserPage(_ref) {
-  var Footer = _ref.Footer,
-      LogoutModal = _ref.LogoutModal,
+  var LogoutModal = _ref.LogoutModal,
       LanguageDropdown = _ref.LanguageDropdown,
       currentUser = _ref.currentUser;
   return React.createElement(
-    ScreenTemplate,
-    { Footer: Footer },
+    'div',
+    null,
     React.createElement(
       Helmet,
       null,

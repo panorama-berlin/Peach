@@ -4,15 +4,10 @@ import PropTypes from 'prop-types'
 import { FormattedMessage } from 'react-intl'
 
 import messages from './messages'
-import {
-  ScreenTemplate,
-  Header,
-  QrCode,
-  LogoutButton
-} from '../../../components'
+import { Header, QrCode, LogoutButton } from '../../../components'
 
-const UserPage = ({ Footer, LogoutModal, LanguageDropdown, currentUser }) => (
-  <ScreenTemplate Footer={Footer}>
+const UserPage = ({ LogoutModal, LanguageDropdown, currentUser }) => (
+  <div>
     <Helmet>
       <title>User Page</title>
       <meta
@@ -26,7 +21,7 @@ const UserPage = ({ Footer, LogoutModal, LanguageDropdown, currentUser }) => (
     <QrCode value={currentUser.id} size={200} />
     <LogoutModal />
     <LanguageDropdown />
-  </ScreenTemplate>
+  </div>
 )
 
 UserPage.propTypes = {

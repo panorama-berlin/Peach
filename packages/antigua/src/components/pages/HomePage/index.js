@@ -3,10 +3,10 @@ import { Helmet } from 'react-helmet'
 import { FormattedMessage } from 'react-intl'
 
 import messages from './messages'
-import { ScreenTemplate, Header } from '../../../components'
+import { Header } from '../../../components'
 
-const HomePage = ({ Footer }) => (
-  <ScreenTemplate Footer={Footer}>
+const HomePage = () => (
+  <div>
     <Helmet>
       <title>Home Page</title>
       <meta
@@ -17,7 +17,7 @@ const HomePage = ({ Footer }) => (
     <Header>
       <FormattedMessage {...messages.header} />
     </Header>
-  </ScreenTemplate>
+  </div>
 )
 
 export default HomePage

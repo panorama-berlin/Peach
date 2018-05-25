@@ -2,7 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import styled from 'styled-components'
 
-import { ScreenTemplate, Header, Image } from '../../../components'
+import { Header, Image } from '../../../components'
 
 import mapImage from './germanyHigh.svg'
 
@@ -21,7 +21,7 @@ const MapImage = styled(props => <Image {...props} />)`
 `
 
 const MapPage = ({ Footer }) => (
-  <ScreenTemplate Footer={Footer}>
+  <div>
     <Helmet>
       <title>Map Page</title>
       <meta
@@ -33,7 +33,7 @@ const MapPage = ({ Footer }) => (
     <Content>
       <MapImage src={mapImage} alt='map' />
     </Content>
-  </ScreenTemplate>
+  </div>
 )
 
 export default MapPage

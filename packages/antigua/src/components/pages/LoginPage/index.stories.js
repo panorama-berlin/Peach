@@ -2,10 +2,6 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import Component from '.'
-import { Login } from '../../../components'
+import Login from '../../organisms/Login/mocks'
 
-const LoginMock = () => <Login onLogIn={() => {}} isLoggingIn={false} />
-
-storiesOf('LoginPage', module).add('default', () => (
-  <Component Login={LoginMock} />
-))
+storiesOf('LoginPage', module).add('default', () => <Component Login={Login} />)

@@ -2,17 +2,8 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import Component from '.'
-import { Footer, QrReader, ScanModal } from '../../../components'
-
-const mockLinks = [
-  { icon: 'home', to: '/home' },
-  { icon: 'compass', to: '/' },
-  { icon: 'camera retro', to: '/scan' },
-  { icon: 'heart', to: '/' },
-  { icon: 'user', to: '/' }
-]
-
-const FooterMock = () => <Footer links={mockLinks} />
+import { ScreenTemplate, QrReader, ScanModal } from '../../../components'
+import Footer from '../../organisms/Footer/mocks'
 
 const QrReaderMock = () => <QrReader onScan={() => {}} clearScan={() => {}} />
 
@@ -21,9 +12,7 @@ const ScanModalMock = () => (
 )
 
 storiesOf('ScanPage', module).add('default', () => (
-  <Component
-    Footer={FooterMock}
-    QrReader={QrReaderMock}
-    ScanModal={ScanModalMock}
-  />
+  <ScreenTemplate Footer={Footer}>
+    <Component QrReader={QrReaderMock} ScanModal={ScanModalMock} />
+  </ScreenTemplate>
 ))

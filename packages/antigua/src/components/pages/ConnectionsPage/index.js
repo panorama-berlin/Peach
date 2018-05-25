@@ -3,10 +3,10 @@ import { Helmet } from 'react-helmet'
 import { FormattedMessage } from 'react-intl'
 
 import messages from './messages'
-import { ScreenTemplate, Header } from '../../../components'
+import { Header } from '../../../components'
 
 const ConnectionsPage = ({ Footer, ConnectionList }) => (
-  <ScreenTemplate Footer={Footer}>
+  <div>
     <Helmet>
       <title>Connections</title>
       <meta
@@ -18,7 +18,7 @@ const ConnectionsPage = ({ Footer, ConnectionList }) => (
       <FormattedMessage {...messages.header} />
     </Header>
     <ConnectionList />
-  </ScreenTemplate>
+  </div>
 )
 
 export default ConnectionsPage
