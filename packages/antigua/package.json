@@ -28,7 +28,7 @@
     "storybook": "start-storybook -p 9001 -c .storybook",
     "prepare": "npm run build",
     "format": "prettier-standard 'src/**/*.js'",
-    "precommit": "lint-staged"
+    "precommit": "npm run build && lint-staged"
   },
   "lint-staged": {
     "./src/**/*.{js,json,css,md}": [
